@@ -33,12 +33,7 @@ new Vue({
   template: '<App/>',
   created () {
     firebase.initializeApp({
-      apiKey: 'AIzaSyDjArdGaSc9fAMONyldfyCpu63oan1jW_Y',
-      authDomain: 'cafevite-toronto.firebaseapp.com',
-      databaseURL: 'https://cafevite-toronto.firebaseio.com',
-      projectId: 'cafevite-toronto',
-      storageBucket: 'gs://cafevite-toronto.appspot.com',
-      messagingSenderId: '582556172295'
+      //sensitive data
     })
     firebase.auth().onAuthStateChanged(
       user => {
